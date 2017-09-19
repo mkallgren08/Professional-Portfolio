@@ -1,5 +1,6 @@
 body{
 	background-image: url("./../images/br_nickel.png");
+	width: 100%;
 }
 
 /*div{
@@ -16,10 +17,25 @@ li.active{
 	background-color: transparent;
 }
 
+.connectPanel{
+	margin-bottom: 70px;
+}
+
+.contactFormWrapper{
+	margin-bottom: 50px;
+}
+
+#contactSubmit{
+	position: relative;
+	left: 45%;
+}
+
 .contactee{
 	width: 99%;
 	/*margin: 1% 25% 1% 1%;*/
 }
+
+
 
 .desc{
 	text-align: center;
@@ -36,7 +52,7 @@ li.active{
 	z-index: 1;
 }
 
-.messagetxt{
+#messagetxt{
 	width: 99%;
 	height: 150px;
 }
@@ -44,6 +60,7 @@ li.active{
 .nav-tabs>li.active>a, 
 .nav-tabs>li.active>a:focus, 
 .nav-tabs>li.active>a:hover {
+	color: beige;
 	background-color: transparent;
 	border: 2px solid #9eaeb5;
 	border-bottom: transparent;
@@ -92,10 +109,12 @@ li.active{
 
 .namelogo{
 	margin: 1% 1% 1% 2%;
-	padding: 0.5% 1%;
+	padding: 0.5% 5%;
+	/* padding-left: 30px; */
 	background-image: url("./../images/br_brass.jpg");
 	background-size: 100%;
-	min-width: 251px;
+	min-width: 266px;
+	text-shadow: -1px 1px #504D4D;
 }
 
 .banner{
@@ -107,6 +126,7 @@ li.active{
 	margin: 10px 0px;
 	background-color: #ebebeb;
 	border-radius: 5px;
+	margin-bottom: 50px;
 }
 
 .navbar{
@@ -116,13 +136,19 @@ li.active{
 
 .navtabs{
 	margin-left: 16%;
+	max-width: 500px;
 }
 
 .nav-tabs{
 	min-width: 251px;
+	max-width: 500px;
 	/*position: absolute;
 	right: 5%;
 	bottom: 0%;*/
+}
+
+#page-nav{
+	max-width: 500px;
 }
 
 .panel{

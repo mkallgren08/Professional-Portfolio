@@ -11,121 +11,149 @@
 </head>
 
 <body>
-	<!-- <div class="container"> -->
-		<div class = "container-fluid banner">
-			<div class="container">
-				<div class = "row">
-					<div class="col-md-12">
-						<!-- Navbar -->
-						<nav class="navbar navbar-default navbar-static-top">
-							<div class="row">
-								<div class="col-md-6">
-									<div class = "navbar-left namelogo">
-										<h1>Michael K. Kallgren</h1> 	
-									</div>
+	<div class = "container-fluid banner">
+		<div class="container">
+			<div class = "row">
+				<div class="col-md-12">
+					<!-- Navbar -->
+					<nav class="navbar navbar-default navbar-static-top">
+						<div class="row">
+							<div class="col-md-6">
+								<div class = "navbar-left namelogo">
+									<h1>Michael K. Kallgren</h1> 	
 								</div>
-								<div class="col-sm-6">
-									<div class="row topfill">
-										<div class="col-sm-12"></div>
-									</div>
-									<div class= "row">	
-										<div class = "col-md-12">
-											<div class="container navtabs">
-												<ul class="nav nav-tabs">
-												  <li role="presentation"><a href="index.html">About</a></li>
-												  <li role="presentation" class="active"><a href="contact.html">Contact</a></li>
-												  <li role="presentation"><a href="portfolio.html">Portfolio</a></li>
-												</ul>
-											</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="row topfill">
+									<div class="col-sm-12"></div>
+								</div>
+								<div class= "row">	
+									<div class = "col-md-12">
+										<div class="container navtabs">
+											<ul class="nav nav-tabs">
+												<li role="presentation" class = "tabName"><a href="index.html">About</a></li>
+												<li role="presentation" class="active" class = "tabName"><a href="contact.html">Contact</a></li>
+												<li role="presentation" class = "tabName"><a href="portfolio.html">Portfolio</a></li>
+											</ul>
 										</div>
 									</div>
 								</div>
 							</div>
-						</nav><!--  End navbar -->
-					</div>
+						</div>
+					</nav><!--  End navbar -->
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<div class="container mainbody">
-			<div class="row">
-				<div class="col-sm-6 col-md-6 maincontent">
-					<div class="row">
-						<div class="col-md-12">
-							<h3> Contact Me </h3>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class = "col-xs-12 col-sm-12 col-md-12">
-							<form action="#">
-			  					<h4>Your Name:</h4><br>
-			  						<input class = "contactee" type="text" name="name"><br>
-			  					<h4>Your E-Mail:</h4><br>
-			  						<input class = "contactee" type="text" name="email"><br>
-			   					<h4>Callback Number:</h4><br>
-			  						<input class = "contactee" type="text" name="phone"><br>
-								<h4>Your Message:</h4><br>
-									<textarea class = "messagetxt" rows = "6" columns = "50"></textarea><br>
-								<h4>Preferred Method of Contact?</h4><br>
-									<input type="radio" name="contacttype" value="email" checked> E-mail<br>
-			  						<input type="radio" name="contacttype" value="phone"> Phone<br>
-			  						<input type="radio" name="contacttype" value="either"> Either<br>
-			  					<br>
-			  					<input class = "submit" type="submit" value="Submit">
-							</form>
-						</div>
+	<div class="container mainbody">
+		<div class="row">
+			<div class="col-sm-6 col-md-6 maincontent">
+				<div class="row">
+					<div class="col-md-12">
+						<h3> Contact Me </h3>
 					</div>
 				</div>
-				<div class = "col-sm-6 col-md-6">
-					<div class="row">
-						<div class="col-md-2"></div>
-						<div class="col-md-7">
-							<div class="panel panel-default">
-								  <div class="panel-heading">
-								    <h3 class="panel-title">Connect With Me</h3>
-								  </div>
-								  <div class="panel-body">
-								    <div class = "icons"> <!-- Begin Icon Section -->
-										<!-- Git Hub Icon -->
-										<div class = "iconlnk">
-											<a href = "https://github.com/mkallgren08" target = "_blank">
-												<img class = "icon" src = "./assets/images/GitHub-Mark.png" alt = 'GitHub Icon'>
-											</a>
-										</div>
+
+				<div class="row contactFormWrapper">
+					<div class = "col-sm-12">
+						<form method = "post" action="index.php">
+							<h4>Your Name:</h4><br>
+								<input id = "contacteeName" class = "contactee" type="text" 
+								placeholder = "Your Name Here" name="name"><br>
+							<h4>Your E-Mail:</h4><br>
+								<input id = "contacteeEmail" class = "contactee"  type="text" 
+								placeholder = "Your E-Mail Here" name="email"><br>
+							<h4>Callback Number:</h4><br>
+								<input id = "contacteeNumber" class = "contactee"  type="text" 
+								placeholder = "Prefered Number Here" name="phone"><br>
+							<h4>Your Message:</h4><br>
+								<textarea id = "messagetxt" rows = "6" 
+								columns = "150" name = "message"></textarea><br>
+							<h4>Preferred Method of Contact?</h4><br>
+								<input type="radio" name="contacttype" value="email" > E-mail<br>
+								<input type="radio" name="contacttype" value="phone"> Phone<br>
+								<input type="radio" name="contacttype" value="either" checked> Either<br>
+							<!-- <h4>*What is 2+2? (Anti-spam)</h4>
+								<input name="human" placeholder="Type Here"> -->
 							
-										<!-- LinkedIn Icon -->
-										<div class = "iconlnk">
-											<a href = "https://www.linkedin.com/in/michaelkallgren/" target = "_blank">
-												<img class = "icon" src = "./assets/images/linkedin-logo.jpg" alt = 'LinkedIn Icon'>
-											</a>
-										</div>
-							
-										<!-- StackOverflow Icon -->
-										<div class = "iconlnk">
-											<a href = "https://stackexchange.com/users/11177288/michael-kallgren" target = "_blank">
-												<img class = "icon" src = "./assets/images/so-icon.svg" alt = "StackOverflow Icon">
-											</a>
-										</div>
-									</div> <!-- End Icons -->
-								  </div>
+							<br>
+							<input class = "submit btn-default" type="submit" id = "contactSubmit" value="Submit">
+						</form>
+						<!-- <?php
+							$name = $_POST['name'];
+							$email = $_POST['email'];
+							$message = $_POST['message'];
+							$from = 'From: TangledDemo'; 
+							$to = 'demo@tangledindesign.com'; 
+							$subject = 'Hello';
+							$human = $_POST['human'];
+									
+							$body = "From: $name\n E-Mail: $email\n Message:\n $message";
+										
+							if ($_POST['submit'] && $human == '4') {				 
+								if (mail ($to, $subject, $body, $from)) { 
+								echo '<p>Your message has been sent!</p>';
+							} else { 
+								echo '<p>Something went wrong, go back and try again!</p>'; 
+							} 
+							} else if ($_POST['submit'] && $human != '4') {
+							echo '<p>You answered the anti-spam question incorrectly!</p>';
+							}
+						?> -->
+					</div>
+				</div>
+			</div>
+			<!-- CONNECT WITH ME -->
+			<div class = "col-sm-6 col-md-6">
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-7">
+						<div class="panel panel-default connectPanel">
+							<div class="panel-heading">
+							<h3 class="panel-title">Connect With Me</h3>
+							</div>
+							<div class="panel-body">
+								<div class = "icons"> <!-- Begin Icon Section -->
+									<!-- Git Hub Icon -->
+									<div class = "iconlnk">
+										<a href = "https://github.com/mkallgren08" target = "_blank">
+											<img class = "icon" src = "./assets/images/GitHub-Mark.png" alt = 'GitHub Icon'>
+										</a>
+									</div>
+						
+									<!-- LinkedIn Icon -->
+									<div class = "iconlnk">
+										<a href = "https://www.linkedin.com/in/michaelkallgren/" target = "_blank">
+											<img class = "icon" src = "./assets/images/linkedin-logo.jpg" alt = 'LinkedIn Icon'>
+										</a>
+									</div>
+						
+									<!-- StackOverflow Icon -->
+									<div class = "iconlnk">
+										<a href = "https://stackexchange.com/users/11177288/michael-kallgren" target = "_blank">
+											<img class = "icon" src = "./assets/images/so-icon.svg" alt = "StackOverflow Icon">
+										</a>
+									</div>
+								</div> <!-- End Icons -->
 							</div>
 						</div>
-						<div class="col-md-3"></div>
 					</div>
+					<div class="col-md-3"></div>
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<nav class="navbar navbar-default footer navbar-static-bottom">
-		  	<div class="container-fluid row" style = "margin-right: 0px; margin-left: 0px;">
-					<div class="col-md-12">
-						<div class="col-md-5"></div>
-						<div class="col-md-2 copyright">Copyright &copy; 2017</div>
-						<div class="col-md-5" style = "padding-right:0px;"></div>
-					</div>
-		  	</div>
-		</nav>
+	<!-- BOTTOM FOOTER -->
+	<nav class="navbar navbar-default footer navbar-fixed-bottom">
+		<div class="container-fluid row" style = "margin-right: 0px; margin-left: 0px;">
+				<div class="col-md-12">
+					<div class="col-md-5"></div>
+					<div class="col-md-2 copyright">Copyright &copy; 2017</div>
+					<div class="col-md-5" style = "padding-right:0px;"></div>
+				</div>
+		</div>
+	</nav>
 
-	<!-- </div> -->
 </body>
